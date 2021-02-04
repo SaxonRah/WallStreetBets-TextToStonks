@@ -3,6 +3,7 @@ Python, Wall Street Bets, Natural Language Processing, Stock Sentiment
 
 # Rah's Belief Model
 Written - JAN-25-2021
+Uses GPU computation
 
 # Idea taken from Dumb Money Live's video
 https://www.youtube.com/watch?v=pykcaisxB1g
@@ -16,3 +17,8 @@ Named entities, Noun phrases, Noun concepts, Verbs, Sentiments
 
 # Post-Analyze Processing
 From gathered information, label the data, and let NN learn from supervision.
+
+# Machine used to build and train
+i5-9600k
+RTX 2080
+32gb Ram
