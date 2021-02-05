@@ -1,5 +1,6 @@
 # WallStreetBets-TextToStonks
 Python, Wall Street Bets, Natural Language Processing, Stock Sentiment
+(I know, I know. This fucking repo reads a bit like: https://www.youtube.com/watch?v=1NBfZcNU4O0 )
 
 # Spacy, NLTK, praw, sqlite3, pandas, matplotlib, BeautifulSoup4, requests, uh, numpy, other shit probably.
 
