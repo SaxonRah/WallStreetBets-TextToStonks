@@ -1,6 +1,7 @@
 # WallStreetBets-TextToStonks
 Python, Wall Street Bets, Natural Language Processing, Stock Sentiment
-(I know, I know. This fucking repo reads a bit like: https://www.youtube.com/watch?v=1NBfZcNU4O0 )
+
+(I know, I know. This fucking repo reads a bit like: https://www.youtube.com/watch?v=1NBfZcNU4O0 just bear with...)
 
 # Spacy, NLTK, praw, sqlite3, pandas, matplotlib, BeautifulSoup4, requests, uh, numpy, other shit probably.
 
@@ -9,7 +10,9 @@ Python, Wall Street Bets, Natural Language Processing, Stock Sentiment
 
 # Rah's Belief Model
 Written - JAN-25-2021 - Uses GPU computation
-My own idea turned out to be a simple combination of Dumb Money and The Codex's Ideas, but combined with an overall sentiment - a supervised learning or a trainable model.
+My own idea turned out to be a simple combination of Dumb Money and The Codex's Ideas
+but combined with an overall sentiment - a supervised learning or a trainable model.
+The Codex used NLTK and Vader for Sentiment but I prefer spacy and spacy-stanza, but to each their own. Will use both and compare results.
 
 # Idea taken from Dumb Money Live's video
 https://www.youtube.com/watch?v=pykcaisxB1g
