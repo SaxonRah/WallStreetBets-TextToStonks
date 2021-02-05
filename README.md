@@ -29,3 +29,7 @@ From gathered information, label the data, and let NN learn from supervision.
 i5-9600k
 RTX 2080
 32gb Ram
+
+# Contributing
+Don't. Not yet, atleast. Let something be finished first. It's just a collection of scripts and ideas. Be paitent.
+Everything will be "self_test()"-able, so you can learn how everything is structured. Should be pretty self explainitory if you follow the self_test()'s
