@@ -1,10 +1,10 @@
 from urllib.request import urlopen, Request
 from bs4 import BeautifulSoup
-import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# import nltk
 # nltk.download()  # Download vader, (just download all)
 
 finviz_url = 'https://finviz.com/quote.ashx?t='

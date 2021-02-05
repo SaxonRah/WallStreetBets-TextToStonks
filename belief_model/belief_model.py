@@ -17,12 +17,15 @@ Belief Model - Probability that a stonk is good or bad.
 
 	Do the same for news, analysts, ect... articles [na] instead of [sp].
 	Generate a probability on all calculated Sentiments for an overall Sentiment.
-		Maybe in the future build and train a simple NN to generate a non computable probability of an overall belief.
+		Maybe in the future build and train a simple NN to generate a less computable probability of an overall belief.
+		like have human's read articles and give their own overall belief scores to articles, posts, ect.
+		have NN train off human overall belief scores. give NN mostly raw posts to validate.
 
 
 Digital Eyeball
 	Gather information [sp] (stonk post) in some form [x]
 		(csv or database, pref db, wanna try mindsdb with postgreSQL, maybe just csv and postgreSQL?).
+		for now i'm gonna use sqlite3 as it's built in. see what's up after something is actually working...
 
 
 Spacy GPU NLP
@@ -30,22 +33,7 @@ Spacy GPU NLP
 
 
 The [x] Relational? Database 	- Key : Value
+	See creation_databased.py
 
-	Ticker_Table
-		Ticker_Table_Key		- 0, 1, ect...
-		Ticker_Table_Value		- GME, AMC, ect...
-
-	Sentiment_Table
-		Sentiment_Table_Key     - 0, 1, ect...
-		Ticker_Table_Key        - Ticker_Table_Key (0 (GME), 1 (AMC), ect...)
-		Post					- "I think GME will moon." (string)
-		Sentiment				- 0 to 1 (integer)
-
-	Overall_Table
-		Overall_Table_Key		- Ticker_Table_Key (0 (GME), 1 (AMC), ect...)
-		Overall_Sentiment		- 0.0 to 1.0 (decimal)
-		Sentiment_Table			- Sentiment_Table_Key (0, 1, ect...)
-
-The overall_Table describes it's belief in the stonk.
 
 """
