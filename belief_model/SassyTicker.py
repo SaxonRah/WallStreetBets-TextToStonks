@@ -27,7 +27,7 @@ for ticker, news_table in news_tables.items():
 
     for row in news_table.findAll('tr'):
 
-        title = row.a.text
+        title_text = row.a.text
         date_data = row.td.text.split(' ')
 
         if len(date_data) == 1:
@@ -37,14 +37,14 @@ for ticker, news_table in news_tables.items():
             date = date_data[0]
             time = date_data[1]
 
-        parsed_data.append([ticker, date, time, title])
+        parsed_data.append([ticker, date, time, title_text])
 
 df = pd.DataFrame(parsed_data, columns=['ticker', 'date', 'time', 'title'])
 
 vader = SentimentIntensityAnalyzer()
 
-f = lambda title: vader.polarity_scores(title)['compound']
-df['compound'] = df['title'].apply(f)
+function = lambda title: vader.polarity_scores(title)['compound']
+df['compound'] = df['title'].apply(function)
 df['date'] = pd.to_datetime(df.date).dt.date
 
 plt.figure(figsize=(10, 8))
