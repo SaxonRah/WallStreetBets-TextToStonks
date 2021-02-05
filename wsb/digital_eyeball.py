@@ -21,19 +21,26 @@ https://praw.readthedocs.io/en/latest/getting_started/quick_start.html
 
 reddit = praw.Reddit("WallStreetBets-TextToStonks",
                      user_agent="Win:WallStreetBets-TextToStonks:0.0 (by /u/DrPixelBits)")
+wallstreetbets_subreddit = reddit.subreddit("wallstreetbets")
 
-url = "https://www.reddit.com/r/funny/comments/3g1jfi/buttons/"
-submission = reddit.submission(url=url)  # submission url
-submission = reddit.submission(id="3g1jfi")  # submission’s ID
+# for submission in reddit.subreddit("wallstreetbets").hot(limit=25):
+for submission in reddit.subreddit("wallstreetbets").top("all"):
+    print(submission.title)
 
-try:
-    for top_level_comment in submission.comments:
-        print(top_level_comment.body)
-except AttributeError as ae:
-    print(ae)
+# Can combine subreddits.
+# for submission in reddit.subreddit("wallstreetbets+stocks").top("all"):
+#    print(submission)
 
-
-for top_level_comment in submission.comments:
-    if isinstance(top_level_comment, MoreComments):
-        continue
-    print(top_level_comment.body)
+# Example Shit
+# url = "https://www.reddit.com/r/funny/comments/3g1jfi/buttons/"
+# submission = reddit.submission(url=url)  # submission url
+# submission = reddit.submission(id="3g1jfi")  # submission’s ID
+# try:
+#     for top_level_comment in submission.comments:
+#         print(top_level_comment.body)
+# except AttributeError as ae:
+#     print(ae)
+# for top_level_comment in submission.comments:
+#     if isinstance(top_level_comment, MoreComments):
+#         continue
+#     print(top_level_comment.body)
