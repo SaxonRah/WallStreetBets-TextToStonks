@@ -10,8 +10,15 @@ but combined with an overall sentiment - a supervised learning or a trainable mo
 The Codex used NLTK and Vader for Sentiment but I prefer spacy and spacy-stanza, but to each their own. Will use both and compare results.
 
 # Idea
-Scrape reddit's r/WallStreetBets. Use NLP to get stonk sentiment. Try to avoid sentiment engine downsides.
-Reddit API or with BeautifulSoup4 and Selenium. Or build a simple social media API wrapper, for many API.
+1. Scrape reddit's r/WallStreetBets. Use NLP to get stonk sentiment.
+2. Scrape finviz's stock news. Use NLP to get article sentiment.
+3. Try to avoid sentiment engine downsides by parsing content first then realizing a sentiment. <- YOU ARE HERE
+4. Graph a collection of WSB post sentiments. <- YOU ARE HERE
+5. Graph a collection of finviz's stock news sentiments. <- YOU WERE HERE
+6. GUI for graph exploration.
+7. GUI for manual entry of WSB post and finviz's stock news to add new or update sentiments in database.
+8. Make a simple overall sentiment for stock [x]. An average of all WSB post sentiments and finviz's stock news sentiments collected.
+9. Create an AI to do overall sentiment anylasis based on all WSB post sentiments and finviz's stock news sentiments collected.
 
 # Idea taken from Dumb Money Live's video
 https://www.youtube.com/watch?v=pykcaisxB1g
