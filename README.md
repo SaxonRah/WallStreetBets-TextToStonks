@@ -22,8 +22,8 @@ The Codex used NLTK and Vader for Sentiment but I prefer spacy and spacy-stanza,
 
 # How it works
 Everything is kinda it's own script at the moment and nothing is tied together.
-That's okay for now. once I review my retardation I'll continue on tie-ing everything together, and finalize and approach to AI.
-But before I do that I wanna make sure
+That's okay for now. once I review my retardation I'll continue on tie-ing everything together, and finalize with GUI and overall sentiment.
+We will approach the AI, in time. But before I do that I wanna make sure
 1. Each script is self_test() -able.
 2. Each script works by itself.
 3. New scripts created to combine functionality.
