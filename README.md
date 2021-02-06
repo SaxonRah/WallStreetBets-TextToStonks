@@ -20,6 +20,15 @@ The Codex used NLTK and Vader for Sentiment but I prefer spacy and spacy-stanza,
 8. Make a simple overall sentiment for stock [x]. An average of all WSB post sentiments and finviz's stock news sentiments collected.
 9. Create an AI to do overall sentiment anylasis based on all WSB post sentiments and finviz's stock news sentiments collected.
 
+# How it works
+Everything is kinda it's own script at the moment and nothing is tied together.
+That's okay for now. once I review my retardation I'll continue on tie-ing everything together, and finalize and approach to AI.
+But before I do that I wanna make sure
+1. Each script is self_test() -able.
+2. Each script works by itself.
+3. New scripts created to combine functionality.
+4. New scripts self_test() -able.
+
 # Idea taken from Dumb Money Live's video
 https://www.youtube.com/watch?v=pykcaisxB1g
 # Idea taken from TheCodex's Video
