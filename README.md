@@ -11,6 +11,27 @@ Python, Wall Street Bets, Natural Language Processing, Stock Sentiment
 # Bullshit Paint Mockup of Stonk Sentiment Tracker
 ![alt text](https://github.com/SaxonRah/WallStreetBets-TextToStonks/blob/main/readme_resource/WIP_StonkSentimentTracker_GUI.png?raw=true)
 
+```
+📦python_source
+ ┣ 📂belief_model
+ ┃ ┣ 📜belief_model.py
+ ┃ ┣ 📜sassy_ticker.py
+ ┃ ┗ 📜__init__.py
+ ┣ 📂data_based
+ ┃ ┣ 📜creation_databased.py
+ ┃ ┣ 📜wsb-tts-data-based.db
+ ┃ ┗ 📜__init__.py
+ ┣ 📂nlp
+ ┃ ┣ 📂__pycache__
+ ┃ ┣ 📜spacy_gpu_nlp.py
+ ┃ ┗ 📜__init__.py
+ ┣ 📂wsb
+ ┃ ┣ 📜digital_eyeball.py
+ ┃ ┣ 📜praw.ini
+ ┃ ┗ 📜__init__.py
+ ┗ 📜__init__.py
+```
+
 # Rah's Belief Model
 Written - JAN-25-2021 - Uses GPU computation
 My own idea turned out to be a simple combination of Dumb Money and The Codex's Ideas
