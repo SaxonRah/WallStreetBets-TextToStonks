@@ -17,8 +17,8 @@ for ticker in tickers:
     req = Request(url=url, headers={'user-agent': 'my-app'})
     response = urlopen(req)
 
-    html = BeautifulSoup(response, features='html.parser')
-    news_table = html.find(id='news-table')
+    bs4_html = BeautifulSoup(response, features='html.parser')
+    news_table = bs4_html.find(id='news-table')
     news_tables[ticker] = news_table
 
 parsed_data = []

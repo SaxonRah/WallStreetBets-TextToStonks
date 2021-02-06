@@ -82,4 +82,4 @@ def self_test():
 		print('SUCCESS: spacy_gpu_nlp self_test completed.')
 
 
-self_test()
+# self_test()
