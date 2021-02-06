@@ -127,4 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-wsb/praw.ini
+python_source/wsb/praw.ini

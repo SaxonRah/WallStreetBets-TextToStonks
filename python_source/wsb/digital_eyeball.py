@@ -1,15 +1,11 @@
-from nlp.spacy_gpu_nlp import spacy_gpu_nlp
+from python_source.nlp.spacy_gpu_nlp import spacy_gpu_nlp
 
-import datetime
 import re
 
 import praw
-from praw.models import MoreComments
 from pprint import pprint
 
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-import pandas as pd
-import matplotlib.pyplot as plt
 
 """
 ---
